@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#040228 0%,#1fa3dd 40%);
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background: #f0f0f0;
+    text-align: center;
+    list-style: none;
+    top: 0;
+    left: 0;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+    color: #fff;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    padding: 15px;
+    margin: 15px;
+    width: 120px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #040228;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #960019;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.4s;
+}
+.navbar ul li a:hover{
+    color: #040228;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.sub-menu{
+    display: none;
+}
+.navbar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: #f0f0f0;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.navbar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #ffff;
+    background: transparent;
+    text-align: left;
+}
+.navbar ul b li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #960019;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.4s;
+}
+.navbar ul b li a:hover{
+    color: #040228;
+}
+.navbar ul b li:hover::after{
+    width: 50%;
+}
+.navbar .toggle_btn{
+    font-weight: bold;
+    display: none;
+}
+.signin_btn{
+    color: #040228;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.signin_btn::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #960019;
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
+    transition: 0.4s;
+}
+.signin_btn:hover{
+    color: #040228;
+}
+.signin_btn:hover::after{
+    width: 87.5%;
+}
+.wrapper{
+    color: #f0f0f0;
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid #899dd1;
+    box-shadow: 0 0 30px #040228;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+.form-box h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #040228;
+    margin: 30px 0;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #f0f0f0;
+    font-weight: 500;
+}
